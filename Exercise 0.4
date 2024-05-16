@@ -21,7 +21,7 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    server-->>browser: status code(200) , Response Body
+    server-->>browser: [{ "status code": "200", "Response Body": "..." }, ... ]
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
